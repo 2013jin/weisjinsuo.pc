@@ -1,0 +1,125 @@
+@charset "utf-8";
+/*公共部分*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Microsoft YaHei","微软雅黑",Tahoma,Helvetica;
+    background: #fff;
+}
+ul, ol {
+    list-style: none;
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+select, input {
+    vertical-align: middle;
+}
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+textarea {
+    resize: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+table {
+    border-collapse: collapse;
+}
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;/*IE/7/6*/
+}
+a {
+    color: #666;
+    text-decoration: none!important;
+}
+a:hover,
+a:visited,
+a:active {
+    color: #666;
+    text-decoration: none!important;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+@font-face {
+    font-family: 'MiFie-Website-Font';
+    src: url('../font/MiFie-Website-Font.ttf')  format('truetype');
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'MiFie-Website-Font' !important;
+    font-style: normal;
+}
+
+
+.container {
+    width: 1170px!important;
+}
+#header,
+#carousel-ad,
+#notice,
+#feature-record,
+#products,
+#news,
+#footer {
+    min-width: 1300px!important;
+}
+@media (min-width: 10px) {
+    /*.navbar {*/
+    /*border-radius: 4px;*/
+    /*}*/
+    .navbar-header {
+        float: left;
+    }
+    /*.container > .navbar-header{*/
+    /*margin-right: 0;*/
+    /*margin-left: 0;*/
+    /*}*/
+    .navbar > .container .navbar-brand{
+        margin-left: -15px;
+    }
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .navbar-right {
+        float: right !important;
+        margin-right: -15px;
+    }
+}
